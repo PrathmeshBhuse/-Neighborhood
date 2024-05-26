@@ -1,0 +1,180 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  box-shadow: 0 2px 3px -2px black;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+.navbar.show {
+  transform: translateY(0);
+}
+
+.navlogo {
+  display: flex;
+  align-items: center;
+}
+
+.navLogoImg {
+  height: 60px;
+  width: 280px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-item:hover .nav-hr {
+  width: 100%;
+  background: red;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-hr {
+  width: 0;
+  border: none;
+  height: 2px;
+  background-color: transparent;
+  transition: width 0.3s ease-in-out;
+  margin-top: 5px;
+}
+
+.download {
+  appearance: button;
+  background-color: #1899D6;
+  border: none;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'DIN Round', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  margin-right: 40px;
+  outline: none;
+  padding: 13px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.download:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  border-radius: 16px;
+  background-color: #1CB0F6;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.download:hover:not(:disabled) {
+  background-color: #1CB0F6;
+  transform: translateY(-2px);
+}
+
+.download:active {
+  transform: translateY(0);
+}
+
+.download:disabled {
+  cursor: auto;
+  background-color: #CCCCCC;
+}
+
+#login-signup {
+  appearance: button;
+  background-color: #1899D6;
+  border: none;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'DIN Round', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  margin-right: -130px;
+  outline: none;
+  padding: 1px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+#login-signup:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  border-radius: 16px;
+  background-color: #1CB0F6;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+#login-signup:hover:not(:disabled) {
+  background-color: #1CB0F6;
+  transform: translateY(-2px);
+}
+
+#login-signup:active {
+  transform: translateY(0);
+}
+
+#login-signup:disabled {
+  cursor: auto;
+  background-color: #CCCCCC;
+}
+

@@ -1,0 +1,42 @@
+.info{
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+}
+h1{
+    font-size: 40px;
+}
+
+.left img{
+    margin-top: 70px;
+    height: 600px; 
+    margin-right: 10px; 
+}
+.right{
+    font-family: poppins;
+    text-align: left;
+    word-spacing: 10;
+    line-height: 2.2;
+    font-weight: 500;
+}
+#head3 {
+    font-size: 50px;
+    background: linear-gradient(86.3deg, rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hr3 {
+    width: 3%;
+    height: 2px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background: black; /* Add a background color for visibility */
+    transition: width 0.5s ease; /* Add transition for smooth effect */
+}
+
+#head3:hover + #hr3 {
+    width: 80%;
+    background: red; /* Change background color on hover if needed */
+}

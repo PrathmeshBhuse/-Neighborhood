@@ -1,0 +1,75 @@
+.mainimg {
+  height: 500px;
+  width: 55%;
+  margin-top: 20px;
+}
+
+.text .heading {
+  font-size: 50px;
+  background: linear-gradient(86.3deg, rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text #para1 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: -10px;
+}
+
+.button1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: #FFBF00;
+}
+
+.button1:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button1 {
+      padding: 0.25em 0.75em;
+  }
+}
+
+#heading {
+  font-size: 50px;
+  background: linear-gradient(86.3deg, rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hr1 {
+  width: 3%;
+  height: 2px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  background: black; /* Add a background color for visibility */
+  transition: width 0.5s ease; /* Add transition for smooth effect */
+}
+
+#heading:hover + #hr1 {
+  width: 50%;
+  background: red; /* Change background color on hover if needed */
+}
+
